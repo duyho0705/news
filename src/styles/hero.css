@@ -1,0 +1,42 @@
+@import "tailwindcss";
+@import "./fonts.css";
+@import "./theme.css";
+
+/* ===== Base Styles ===== */
+@layer base {
+  *,
+  *::before,
+  *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+
+/* ===== Font Families ===== */
+@layer utilities {
+  .font-display {
+    font-family: 'Instrument Serif', serif;
+  }
+
+  .font-body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
